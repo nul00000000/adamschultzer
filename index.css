@@ -1,0 +1,28 @@
+* {
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Calibri, sans-serif;
+	line-height: 1.0em;
+}
+
+body {
+	padding: 2em;
+	overflow: hidden;
+}
+
+#infoSection {
+	text-align: center;
+}
+
+.majorSection {
+	text-align: left;
+}
+/*
+.majorSection > h4 {
+	margin-bottom: 0;
+}
+
+.majorSection > ul {
+	margin-top: 0;
+}
+*/
