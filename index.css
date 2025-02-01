@@ -1,6 +1,4 @@
 * {
-	margin-left: auto;
-	margin-right: auto;
 	font-family: Calibri, sans-serif;
 	line-height: 1.0em;
 }
@@ -36,3 +34,16 @@ body {
 	margin-top: 0;
 }
 */
+
+.projectContainer {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: space-between;
+	border-top: 1px dashed black;
+	padding-top: 1em;
+}
+
+.projectContainer > img {
+	width: 20%;
+}
