@@ -6,11 +6,17 @@
 }
 
 body {
-	padding: 2em;
 	overflow: hidden;
 }
 
 #mainDoc {
+	position: absolute;
+	top: 1em;
+	bottom: 1em;
+	left: 1em;
+	right: 1em;
+	padding: 1em;
+	border: 2px solid black;
 	overflow-y: scroll;
 }
 
