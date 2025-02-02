@@ -36,6 +36,7 @@ body {
 */
 
 .projectContainer {
+	position: relative;
 	display: flex;
 	width: 100%;
 	flex-direction: row;
@@ -44,7 +45,20 @@ body {
 	padding-top: 1em;
 }
 
+.projectMainSection {
+	
+}
+
 .projectContainer > img {
-	width: 20%;
-	margin-bottom: 1em;
+	position: absolute;
+	top: 1em;
+	right: 0;
+	height: calc(100% - 2.2em);
+	width: auto;
+	border: 2px solid black;
+	z-index: 2;
+}
+
+.projectContainer > img:hover {
+	transform: translateX(-50%) scale(2);
 }
