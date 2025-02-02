@@ -49,16 +49,20 @@ body {
 	
 }
 
-.projectContainer > img {
+.projectImages {
 	position: absolute;
 	top: 1em;
 	right: 0;
 	height: calc(100% - 2.2em);
+}
+
+.projectImages > img {
+	height: 100%;
 	width: auto;
 	border: 2px solid black;
 	z-index: 2;
 }
 
-.projectContainer > img:hover {
+.projectImages > img:hover {
 	transform: translateX(-50%) scale(2);
 }
