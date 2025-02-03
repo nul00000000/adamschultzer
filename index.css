@@ -5,6 +5,7 @@
 
 body {
 	overflow: hidden;
+	background-color: grey;
 }
 
 #mainDoc {
@@ -16,6 +17,7 @@ body {
 	padding: 1em;
 	border: 2px solid black;
 	overflow-y: scroll;
+	background-color: white;
 }
 
 #infoSection {
