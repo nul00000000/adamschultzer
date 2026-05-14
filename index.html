@@ -12,7 +12,7 @@
 	<body>
 		<div id="mainDoc">
 			<div id="infoSection">
-			<h1>Adam Schultzer (cont.)</h1>
+			<h1>Adam Schultzer (extended)</h1>
 			<div>
 				<a href="https://www.linkedin.com/in/adamschultzer/">LinkedIn</a>
 				<b>&#8226;</b>
@@ -36,33 +36,76 @@
 			<hr>
 			<div id="workExp" class="majorSection">
 				<h2><b>Work Experience</b></h2>
-				<h4>Controls Engineering Intern/Research, Brookhaven National Laboratory</h4>
-				<ul>
-						<li>Developed an <a href="https://epics-controls.org/">EPICS (Experimental Physics and Industrial Control
-							System)</a> control driver to interface with the 
-						<a href="https://www.biologic.net/products/vsp-300/">BioLogic VSP-300</a>.</li>
-					<li>Driver interfaces with the <a href="https://blueskyproject.io">bluesky</a>
-						experiment orchestration framework in order to be used alongside
-						existing systems in the <a href="">NSLSII (National Synchrotron Light Source II)</a></li>
-					<li>Interfaces with major experiments on roughly a third of the NSLSII
-						facility's <a href="https://www.bnl.gov/nsls2/beamlines/">beamlines</a></li>
-					<li>Eliminated a large manual step in using the device, allowing many more
-						experiments to be fully automated</li>
-					<li>Used C++ for the primary driver that interfaced with the device API directly.</li>
-					<ul>
-						<li>Allowed for control over ethernet</li>
-						<li>Preserves GUI control using a CS-Studio screen</li>
-						<li>Used C++ bindings of EPICS</li>
-					</ul>
-					<li>Used Python for a secondary driver that interfaced with hardware outputs
-						on the physical device.</li>
-					<ul>
-						<li>Did not interfere with function of vendor software</li>
-						<li>Focused on tracking important datapoints in order to
-							control experiment flow</li>
-						<li>Used <a href="https://nsls-ii.github.io/ophyd/">ophyd</a> python bindings</li>
-					</ul>
-				</ul>
+				<div class="workContainer">
+					<div>
+						<h4>Controls Engineering Intern/Research, Brookhaven National Laboratory, Upton NY</h4>
+						<ul>
+								<li>Developed an <a href="https://epics-controls.org/">EPICS (Experimental Physics and Industrial Control
+									System)</a> control driver to interface with the 
+								<a href="https://www.biologic.net/products/vsp-300/">BioLogic VSP-300</a>.</li>
+							<li>Driver interfaces with the <a href="https://blueskyproject.io">bluesky</a>
+								experiment orchestration framework in order to be used alongside
+								existing systems in the <a href="">NSLSII (National Synchrotron Light Source II)</a></li>
+							<li>Interfaces with major experiments on roughly a third of the NSLSII
+								facility's <a href="https://www.bnl.gov/nsls2/beamlines/">beamlines</a></li>
+							<li>Eliminated a large manual step in using the device, allowing many more
+								experiments to be fully automated</li>
+							<li>Used C++ for the primary driver that interfaced with the device API directly.</li>
+							<ul>
+								<li>Allowed for control over ethernet</li>
+								<li>Preserves GUI control using a CS-Studio screen</li>
+								<li>Used C++ bindings of EPICS</li>
+							</ul>
+							<li>Used Python for a secondary driver that interfaced with hardware outputs
+								on the physical device.</li>
+							<ul>
+								<li>Did not interfere with function of vendor software</li>
+								<li>Focused on tracking important datapoints in order to
+									control experiment flow</li>
+								<li>Used <a href="https://nsls-ii.github.io/ophyd/">ophyd</a> python bindings</li>
+							</ul>
+						</ul>
+					</div>
+					<div class="projectImagesLeft">
+						<img src="/workImages/bnlpresent.JPEG">
+					</div>
+					<div class="projectImagesRight">
+						<img src="/workImages/bnlclutter.JPEG">
+					</div>
+				</div>
+
+				<div class="workContainer">
+					<div>
+						<h4>Image Sensor Characterization Intern, SRI International, Rochester NY</h4>
+						<ul>
+							<li>Collected low-light image data at the <a href="https://www.rochesterastronomy.org/our-observing-site-at-the-farash-center/">Max Farash Center</a>, 
+								a big open field somewhat away from Rochester light pollution</li>
+							<ul>
+								<li>Created a complex automated test setup using many cameras, a laptop, a raspberry pi, and a few python scripts</li>
+								<li>Had to go after <a href="https://en.wikipedia.org/wiki/Twilight#Astronomical_twilight">astronomical twilight</a>, 
+									requiring many nights of going down to the Farash Center very late at night and in the cold :(</li>
+							</ul>
+							<li>Did a hefty amount of analysis on data collected from these trips, as well as more specific tests, to optimize sensor parameters</li>
+							<ul>
+								<li>Goal of minimizing sensor SNR</li>
+								<li>Used <a href="https://en.wikipedia.org/wiki/Simulated_annealing">simulated annealing</a> to find a good minimum noise state</li>
+							</ul>
+							<li>Used Verilog to design a hardware interface for <a href="https://en.wikipedia.org/wiki/Demosaicing">color demosaicing</a> in a color sparse filter</li>
+							<ul>
+								<li>One pixel of red and blue, and two of green in each 8x8 pixel area created extremely low frequency color information</li>
+								<li>Hardware buffered only 16 extra lines of the image to reconstruct a reasonably color image</li>
+								<li>Complex algorithm for recreating the color artifacting on a non-color image allowed for removing of most artifacts</li>
+							</ul>
+						</ul>
+					</div>
+					<div class="projectImagesLeft">
+						<img src="/workImages/nightvis.png">
+						<img src="/workImages/setup.jpeg">
+					</div>
+					<div class="projectImagesRight">
+						<img src="/workImages/targets.jpeg">
+					</div>
+				</div>
 			</div>
 			<hr>
 			<div id="projects" class="majorSection">
@@ -70,9 +113,54 @@
 				<!-- <div>This is a comprehensive list of all the projects I have ever done,
 					which now that I am making this is quite long, use the navigation bar on
 					the right to navigate it faster!</div> -->
-					<div>This is not a comprehensive list (yet)</div>
-				<h3><b>Personal Projects</b></h3>	
-				<div style="transform: translateY(-100%);">For context, this list is ordered from least to most silly.</div>
+				<div style="transform: translateY(-100%); color: grey;">This is not a comprehensive list (yet), and is ordered from most serious to most silly</div>
+				<div class="projectEndSection"></div>
+				<h3><b>Finished(?) Projects</b></h3>
+				<div style="transform: translateY(-100%); color: grey;">Because is anything ever truly finished?</div>
+				<div class="projectContainer projectEndSection" id="projectCUM">
+					<div class="projectMainSection">
+						<b><a href="https://monke.gay/presentinator">Presentinator (Crowd Understanding Machine)</a></b>
+						<ul>
+							<li>A system for gauging a crowd's interest and opinion, particularly built for the
+								the usecase of a giving a presentation</li>
+							<li>Originally build for RIT's <a href="https://campusgroups.rit.edu/sps/home/">Society of Physics Students</a> 
+								for their semesterly presentation night</li>
+							<ul>
+								<li>Special thanks to Jack Monti for enlisting me for this</li>
+								<li>My most recent community service project and it wasn't even for a club I'm in</li>
+							</ul>
+							<li>
+								Based on the voting system found in the <a href="https://www.jackboxgames.com/games/talking-points">Jackbox game "Talking Points"</a>
+							</li>
+							<li>Frontend logic written in TypeScript, with visuals being done
+								with standard HTML and CSS</li>
+							<ul>
+								<li>Split into host and vote pages</li>
+								<li>Host starts rooms and polls server for changes in vote tallies</li>
+								<li>Vote page simply lets server know when a vote has been cast</li>
+							</ul>
+							<li>
+								Backend also written in TypeScript for Node
+							</li>
+							<ul>
+								<li>Has a reasonble room code system going on, where rooms will persist indefinitely until no votes are cast for 24 hours</li>
+								<li>Other than the rooms, an extremely simple server</li>
+							</ul>
+							<li>
+								<a href="https://github.com/nul00000000/CrowdUnderstandingMachine">GitHub Link</a>
+							</li>
+						</ul>
+					</div>
+					<div class="projectImagesLeft">
+						<img src="https://monke.gay/presentinator/favicon.png">
+					</div>
+					<div class="projectImagesRight">
+						<img src="/projectImages/cumhost.png">
+						<img src="/projectImages/cumvote.png">
+					</div>
+				</div>
+				<h3><b>Active Projects</b></h3>
+				<div style="transform: translateY(-100%); color: grey;">Projects that currently occupy a part of my brain</div>
 				<div class="projectContainer" id="projectSchedge">
 					<div class="projectMainSection">
 						<b><a href="https://schedge.net/">Schedge.net</a></b>
@@ -206,7 +294,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="projectImages">
+					<div class="projectImagesRight">
 						<img src="/projectImages/fpgaGraphics.JPEG">
 					</div>
 				</div>
