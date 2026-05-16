@@ -40,6 +40,10 @@
 					<ul>
 						<li>Bachelor/Master of Science, Computer Engineering, December 2027</li>
 						<li>Expected Minor: Quantum Information Science and Technology or Electrical Engineering (or both!) (or neither!) (who knows!)</li>
+						<li>GPA: 3.98</li>
+						<ul>
+							<li>Damn you diff eq</li>
+						</ul>
 					</ul>
 				</div>
 				<div class="projectImagesLeft">
@@ -173,6 +177,51 @@
 						<!-- <img src="/projectImages/cumvote.png"> -->
 					</div>
 				</div>
+				<div class="projectContainer" id="projectChess">
+					<div class="projectMainSection">
+						<b>Embedded 4KB Chess Engine</b>
+						<ul>
+							<li>A small program operating on an Arm Cortex M0+ board that allows for play of a game of chess over a UART connection</li>
+							<li>Main goal was to explore highly constrained programming</li>
+							<li>Contained a small chess engine that evaluated four half-moves into the future</li>
+							<li>Built for my friend and my final project in our CMPE-250: Embedded Programming class</li>
+							<ul>
+								<li>Used a <a href="https://www.nxp.com/design/design-center/development-boards-and-designs/general-purpose-mcus/frdm-development-platform-for-the-kinetis-kl05-and-kl04-mcus:FRDM-KL05Z">KL05</a>
+									board with only 4KB of RAM and a tiny 256 byte stack.</li>
+							</ul>
+							<!-- <li>
+								Based on the voting system found in the <a href="https://www.jackboxgames.com/games/talking-points">Jackbox game "Talking Points"</a>
+							</li>
+							<li>Frontend logic written in TypeScript, with visuals being done
+								with standard HTML and CSS</li>
+							<ul>
+								<li>Split into host and vote pages</li>
+								<li>Host starts rooms and polls server for changes in vote tallies</li>
+								<li>Vote page simply lets server know when a vote has been cast</li>
+							</ul>
+							<li>
+								Backend also written in TypeScript for Node
+							</li>
+							<ul>
+								<li>Has a reasonble room code system going on, where rooms will persist indefinitely until no votes are cast for 24 hours</li>
+								<li>Other than the rooms, an extremely simple server</li>
+							</ul>
+							<li>
+								<a href="https://monke.gay/presentinator/host/">Host Dashboard</a>
+							</li> -->
+							<li>
+								<a href="https://github.com/yit6/CMPE-250-lab12">GitHub Link</a>
+							</li>
+						</ul>
+					</div>
+					<div class="projectImagesLeft">
+						<!-- <img src="https://monke.gay/presentinator/favicon.png"> -->
+					</div>
+					<div class="projectImagesRight">
+						<!-- <img src="/projectImages/cumhost.png">
+						<img src="/projectImages/cumvote.png"> -->
+					</div>
+				</div>
 				<div class="projectContainer projectEndSection" id="projectCUM">
 					<div class="projectMainSection">
 						<b><a href="https://monke.gay/presentinator/">Presentinator (Crowd Understanding Machine)</a></b>
@@ -202,6 +251,9 @@
 								<li>Has a reasonble room code system going on, where rooms will persist indefinitely until no votes are cast for 24 hours</li>
 								<li>Other than the rooms, an extremely simple server</li>
 							</ul>
+							<li>
+								<a href="https://monke.gay/presentinator/host/">Host Dashboard</a>
+							</li>
 							<li>
 								<a href="https://github.com/nul00000000/CrowdUnderstandingMachine">GitHub Link</a>
 							</li>
@@ -244,8 +296,15 @@
 							</li>
 						</ul>
 					</div>
+					<div class="projectImagesLeft">
+						<img src="https://schedge.net/favicon.png" style="image-rendering: pixelated;">
+					</div>
+					<div class="projectImagesRight">
+						<img src="/projectImages/schedgeprof.png">
+						<img src="/projectImages/schedgectrl.png">
+					</div>
 				</div>
-				<div class="projectContainer">
+				<div class="projectContainer projectEndSection">
 					<div class="projectMainSection">
 						<b><a href="http://adamschultzer.com/anthill/">WebGL Game (anthill)</a></b>
 						<ul>
@@ -274,12 +333,31 @@
 								Solidified many previously learned OpenGL and general graphics
 								programming skills
 							</li>
+							<ul>
+								<li>First time I implemented shadows from scratch</li>
+							</ul>
+							<li>
+								Everything is procedurally generated besides the colors
+							</li>
+							<ul>
+								<li>The terrain is just good ol' perlin noise, nothing crazy there</li>
+								<li>The trees are also completely procedural, even the icospheres used for the leaves</li>
+							</ul>
 							<li>
 								<a href="https://github.com/nul00000000/anthill/">GitHub Link</a>
 							</li>
 						</ul>
 					</div>
+					<div class="projectImagesLeft">
+						<img src="/projectImages/anthillshore.png">
+					</div>
+					<div class="projectImagesRight">
+						<img src="/projectImages/anthilltree.webp">
+						<!-- <img src="/projectImages/cumvote.png"> -->
+					</div>
 				</div>
+				<h3><b>Backburner Projects</b></h3>
+				<div style="transform: translateY(-100%); color: grey;">I haven't given up on them quite yet</div>
 				<div class="projectContainer">
 					<div class="projectMainSection">
 						<b>Multiplayer Game with Marching Cubes Terrain (slavv)</b>
@@ -306,7 +384,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="projectContainer">
+				<div class="projectContainer projectEndSection">
 					<div class="projectMainSection">
 						<b>C++ VR Game Engine</b>
 						<ul>
@@ -324,6 +402,8 @@
 						</ul>
 					</div>
 				</div>
+				<h3><b>Dead Projects</b></h3>
+				<div style="transform: translateY(-100%); color: grey;">A graveyard of half-started ideas, infeasible ideas, and bad ideas</div>
 				<div class="projectContainer">
 					<div class="projectMainSection">
 						<b>Basic Video Card using an FPGA</b>
@@ -352,11 +432,6 @@
 					</div>
 					<div class="projectImagesRight">
 						<img src="/projectImages/fpgaGraphics.JPEG">
-					</div>
-				</div>
-				<div class="projectContainer">
-					<div class="projectMainSection">
-						<b>(More of my projects will be added here soon when I don't have homework)</b>
 					</div>
 				</div>
 			</div>

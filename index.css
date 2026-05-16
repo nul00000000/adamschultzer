@@ -89,7 +89,7 @@ body {
 }
 
 .projectImagesRight > img, .projectImagesLeft > img {
-	height: min(100%, 15em);
+	height: min(90%, 15em);
 	width: auto;
 	border: 2px solid black;
 	z-index: 1;
